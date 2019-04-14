@@ -1,0 +1,323 @@
+*{
+    font-family: "Arial", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 200px;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    align-items: center;
+}
+.container{
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.header .container .logo{
+    display: flex;
+    align-items: center;
+}
+.header .container .menu{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.header .container .menu .navbar ul{
+    display: flex;
+}
+
+.header .container .menu .navbar ul,
+.header .container .menu .navbar li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header .container .menu .navbar li a{
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: #5e5a5a;
+    text-transform: uppercase;
+}
+.header .container .menu .navbar li a:hover,
+.header .container .menu .navbar .active a{
+    background-color: #5dc4f8f3;
+    color: #fff;
+}
+
+/**************** BANNER *********************************/
+
+#banner{
+    background-image: url('../img/img1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 670px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#banner .container{
+    flex-direction: column;
+}
+#banner .container .bannerTop{
+    flex: 1;;
+    display: flex;
+    align-items: center;
+}
+#banner .container .bannerTop h2{
+    color: #fff;
+    font-size: 70px;
+    text-shadow: 2px 2px 2px #000;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+}
+#banner .container .bannerTop h4{
+    color: #fff;
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    margin-top: 30px;
+}
+#banner .container .bannerBottom{
+    height: 210px;
+    display: flex;
+    box-shadow: 1px 2px 2px #CCC
+}
+.banner1,
+.banner2,
+.banner3{
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+}
+.banner1{
+    background-color: #39aae1;
+}
+.banner2{
+    background-color: #0079c7;
+}
+.banner3{
+    background-color: #2b4c99;
+}
+.bannerTitle{
+    font-size: 21px;
+}
+.bannerTexto{
+    font-size: 12px;
+    margin: 20px 0;
+}
+#banner .container .bannerBottom a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+.bannerInfo{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 10px;
+    border-bottom: 1px solid #fff
+}
+
+/*************************** Principal Conteúdo *******************/
+
+.conteudoPrincipal{
+    display: flex;
+    justify-content: center;
+}
+.conteudoPrincipal .container .principal{
+    flex: 2;
+}
+/************************* ASIDE ***********************/
+.conteudoPrincipal .container .banner_conteudo{
+    flex: 1;
+}
+/************************* WIDGETS ***********************/
+.wgedit{
+    font-size: 20px;
+    color: #444;
+    margin-left: 50px;
+}
+
+.widget_title{
+    margin: 20px 0;
+}
+.widget_title_text{
+    color: #000;
+    font-size: 21px;
+}
+.widget_borda{
+    background-color: #36a9e1;
+    width: 50px;
+    height: 2px;
+    margin-top: 10px;
+}
+
+/************************* RETÂNGULOS ***********************/
+.conteudoPrincipal  .widget_conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+.retangulo{
+    background-color: #36a9e1;
+
+    margin: 5px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url('../img/img_01.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: 2px solid #2b4c99
+}
+.ret_01{
+    background-image: url(../img/img_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ret_02{
+    background-image: url(../img/img_02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ret_03{
+    background-image: url(../img/img_03.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ret_04{
+    background-image: url(../img/img_04.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ret_05{
+    background-image: url(../img/img_02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ret_06{
+    background-image: url(../img/img_04.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.new_data{
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: 10px;
+}
+.post_date{
+    background-color: #2b4c99;
+    padding: 10px;
+    margin-right: 3px;
+}
+.post_comment{
+    background-color: #39aae1;
+    padding: 10px;
+}
+.image_post{
+    width: 100%;
+    height: auto;
+}
+.title_conteudo{
+    font-size: 21px;
+    margin-top: 25px;
+    columns: #000;
+}
+.title_conteudo p{
+    font-size: 13px;
+    line-height: 16px;
+    color: #5c5c5c
+}
+article a{
+    text-decoration: none;
+    color: #fff
+}
+article{
+    flex: 1;
+    margin-right: 20px;
+    min-width: 300px;
+}
+.flex{
+    flex-wrap: wrap;
+    display: flex
+}
+
+/*******************************RODAPE***********************/
+
+footer{
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+footer .container .footer_menu{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+footer .container .footer_menu .menu_left,
+footer .container .footer_menu .menu_center,
+footer .container .footer_menu .menu_right{
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+}
+footer .container .footer_menu .menu_left{
+    background-color: #39aae1;
+}
+footer .container .footer_menu .menu_center{
+    background-color: #0079c7;
+}
+footer .container .footer_menu .menu_right{
+    background-color: #2b4c99;
+}
+footer .container .footer_menu h3{
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+}
+footer .container .footer_menu p{
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 0;
+}
+footer .container{
+    flex-direction: column;
+}
+footer .container .menu_conteudo{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+footer .container .menu_conteudo .menu_conteudo_left,
+footer .container .menu_conteudo .menu_conteudo_center,
+footer .container .menu_conteudo .menu_conteudo_right{
+    flex: 1;
+}
+footer .widget, 
+footer .widget_title_text{
+    color: #fff
+}
+footer .container .menu_conteudo .menu_conteudo_left .widget_conteudo_topo{
+    margin-bottom: 15px;
+}
+footer .container .rodape{
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 30px;
+    color: #5c5c5c;
+    font-size: 12px;
+    
+}
